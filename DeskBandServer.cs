@@ -27,7 +27,7 @@ namespace KeyLockIndicatorDeskBand
                 IsSunken = false,
                 ShowTitle = false,
                 Title = "",
-                UseBackgroundColour = false,
+                UseBackgroundColour = true,
                 AlwaysShowGripper = true
             };
         }
