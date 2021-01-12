@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDialog", "CustomColor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestControl", "TestControl\TestControl.csproj", "{0B75BCCA-7B2F-40FA-8F67-81E70C51DAE2}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{D605EEAE-6920-4B68-B012-6F3BC5BDDAEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,8 @@ Global
 		{0B75BCCA-7B2F-40FA-8F67-81E70C51DAE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B75BCCA-7B2F-40FA-8F67-81E70C51DAE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B75BCCA-7B2F-40FA-8F67-81E70C51DAE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D605EEAE-6920-4B68-B012-6F3BC5BDDAEF}.Debug|Any CPU.ActiveCfg = Debug
+		{D605EEAE-6920-4B68-B012-6F3BC5BDDAEF}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
