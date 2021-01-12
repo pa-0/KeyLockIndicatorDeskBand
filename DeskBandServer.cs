@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace KeyLockIndicatorDeskBand
 {
     [ComVisible(true)]
-    [DisplayName("Web Search")]
+    [DisplayName("KeyLockIndicatorDeskBand")]
     public class DeskBandServer : SharpDeskBand
     {
         protected override UserControl CreateDeskBand()
