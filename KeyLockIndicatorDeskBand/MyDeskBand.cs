@@ -114,5 +114,20 @@ namespace KeyLockIndicatorDeskBand
 				lbScroll.Font = new Font(lbScroll.Font, FontStyle.Bold);
 			}
 		}
+
+        private void showNumToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void showCapsToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void showScrollToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

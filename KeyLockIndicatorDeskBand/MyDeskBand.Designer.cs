@@ -33,72 +33,107 @@
             this.lbCaps = new System.Windows.Forms.Label();
             this.lbScroll = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.customColorDialog1 = new CustomDialog.CustomColorDialog();
-            this.customColorDialog2 = new CustomDialog.CustomColorDialog();
-            this.customColorDialog3 = new CustomDialog.CustomColorDialog();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showNumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showCapsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showScrollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbNum
             // 
             this.lbNum.BackColor = System.Drawing.Color.Blue;
+            this.lbNum.ContextMenuStrip = this.contextMenuStrip1;
             this.lbNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbNum.ForeColor = System.Drawing.Color.White;
-            this.lbNum.Location = new System.Drawing.Point(3, 0);
+            this.lbNum.Location = new System.Drawing.Point(3, 6);
             this.lbNum.Name = "lbNum";
-            this.lbNum.Size = new System.Drawing.Size(64, 23);
+            this.lbNum.Size = new System.Drawing.Size(23, 23);
             this.lbNum.TabIndex = 0;
-            this.lbNum.Text = "Num Lock";
+            this.lbNum.Text = "N";
+            this.lbNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lbNum, "Num Lock");
             this.lbNum.Click += new System.EventHandler(this.lbNum_Click);
             // 
             // lbCaps
             // 
             this.lbCaps.BackColor = System.Drawing.Color.Red;
+            this.lbCaps.ContextMenuStrip = this.contextMenuStrip1;
             this.lbCaps.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbCaps.ForeColor = System.Drawing.Color.White;
-            this.lbCaps.Location = new System.Drawing.Point(73, 0);
+            this.lbCaps.Location = new System.Drawing.Point(32, 6);
             this.lbCaps.Name = "lbCaps";
-            this.lbCaps.Size = new System.Drawing.Size(73, 23);
+            this.lbCaps.Size = new System.Drawing.Size(23, 23);
             this.lbCaps.TabIndex = 1;
-            this.lbCaps.Text = "Caps Lock";
+            this.lbCaps.Text = "C";
+            this.lbCaps.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lbCaps, "Caps Lock");
             this.lbCaps.Click += new System.EventHandler(this.lbCaps_Click);
             // 
             // lbScroll
             // 
             this.lbScroll.BackColor = System.Drawing.Color.Lime;
+            this.lbScroll.ContextMenuStrip = this.contextMenuStrip1;
             this.lbScroll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbScroll.ForeColor = System.Drawing.Color.White;
-            this.lbScroll.Location = new System.Drawing.Point(152, 0);
+            this.lbScroll.Location = new System.Drawing.Point(61, 6);
             this.lbScroll.Name = "lbScroll";
-            this.lbScroll.Size = new System.Drawing.Size(75, 23);
+            this.lbScroll.Size = new System.Drawing.Size(23, 23);
             this.lbScroll.TabIndex = 1;
-            this.lbScroll.Text = "Srcoll Lock";
+            this.lbScroll.Text = "S";
+            this.lbScroll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lbScroll, "Srcoll Lock");
             this.lbScroll.Click += new System.EventHandler(this.lbScroll_Click);
             // 
-            // customColorDialog1
+            // contextMenuStrip1
             // 
-            this.customColorDialog1.FullOpen = true;
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showNumToolStripMenuItem,
+            this.showCapsToolStripMenuItem,
+            this.showScrollToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 92);
             // 
-            // customColorDialog2
+            // showNumToolStripMenuItem
             // 
-            this.customColorDialog2.FullOpen = true;
+            this.showNumToolStripMenuItem.Checked = true;
+            this.showNumToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.showNumToolStripMenuItem.Name = "showNumToolStripMenuItem";
+            this.showNumToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.showNumToolStripMenuItem.Text = "Show NumLock";
+            this.showNumToolStripMenuItem.CheckedChanged += new System.EventHandler(this.showNumToolStripMenuItem_CheckedChanged);
             // 
-            // customColorDialog3
+            // showCapsToolStripMenuItem
             // 
-            this.customColorDialog3.FullOpen = true;
+            this.showCapsToolStripMenuItem.Checked = true;
+            this.showCapsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.showCapsToolStripMenuItem.Name = "showCapsToolStripMenuItem";
+            this.showCapsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.showCapsToolStripMenuItem.Text = "Show CapsLock";
+            this.showCapsToolStripMenuItem.CheckedChanged += new System.EventHandler(this.showCapsToolStripMenuItem_CheckedChanged);
             // 
-            // UserControl1
+            // showScrollToolStripMenuItem
+            // 
+            this.showScrollToolStripMenuItem.Checked = true;
+            this.showScrollToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.showScrollToolStripMenuItem.Name = "showScrollToolStripMenuItem";
+            this.showScrollToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.showScrollToolStripMenuItem.Text = "Show ScrollLock";
+            this.showScrollToolStripMenuItem.CheckedChanged += new System.EventHandler(this.showScrollToolStripMenuItem_CheckedChanged);
+            // 
+            // MyDeskBand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.lbScroll);
             this.Controls.Add(this.lbCaps);
             this.Controls.Add(this.lbNum);
-            this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(230, 29);
+            this.Name = "MyDeskBand";
+            this.Size = new System.Drawing.Size(91, 35);
             this.Load += new System.EventHandler(this.UserControl1_Load);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -109,8 +144,9 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label lbCaps;
         private System.Windows.Forms.Label lbScroll;
-        private CustomDialog.CustomColorDialog customColorDialog1;
-        private CustomDialog.CustomColorDialog customColorDialog2;
-        private CustomDialog.CustomColorDialog customColorDialog3;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem showNumToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showCapsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showScrollToolStripMenuItem;
     }
 }
