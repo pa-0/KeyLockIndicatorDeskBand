@@ -29,14 +29,8 @@ namespace TestControl
         /// </summary>
         private void InitializeComponent()
         {
-            this.customColorDialog1 = new CustomDialog.CustomColorDialog();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // customColorDialog1
-            // 
-            this.customColorDialog1.FullOpen = true;
-            this.customColorDialog1.ColorChanged += new CustomDialog.CustomColorDialog.ColorChangedEventHandler(this.customColorDialog1_ColorChanged);
             // 
             // button1
             // 
@@ -63,8 +57,6 @@ namespace TestControl
         }
 
         #endregion
-
-        private CustomDialog.CustomColorDialog customColorDialog1;
         private System.Windows.Forms.Button button1;
     }
 }

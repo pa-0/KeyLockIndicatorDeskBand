@@ -19,22 +19,20 @@ namespace TestControl
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            customColorDialog1.Color = BackColor;
         }
 
         private void customColorDialog1_ColorChanged(object sender, ColorChangedEventArgs e)
         {
-            BackColor = e.CurrentColor;
         }
 
         private void Form1_Shown(object sender, EventArgs e)
         {
-            customColorDialog1.ShowDialog();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            customColorDialog1 = new CustomColorDialog();
+            CustomColorDialog customColorDialog1 = new CustomColorDialog();
             Color oldColor = customColorDialog1.Color = BackColor;
             customColorDialog1.ColorChanged += (o, ev) =>
             {
