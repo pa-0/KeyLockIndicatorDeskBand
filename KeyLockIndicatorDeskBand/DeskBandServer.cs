@@ -16,7 +16,7 @@ namespace KeyLockIndicatorDeskBand
     {
         protected override UserControl CreateDeskBand()
         {
-            return new UserControl1();
+            return new MyDeskBand();
         }
 
         protected override BandOptions GetBandOptions()

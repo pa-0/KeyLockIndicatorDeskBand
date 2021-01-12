@@ -8,14 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using CustomDialog;
 
 namespace KeyLockIndicatorDeskBand
 {
-    public partial class UserControl1: UserControl
+    public partial class MyDeskBand: UserControl
     {
-		private frmSetting frmSetting;
 		UserActivityHook userActivityHook = new UserActivityHook();
-        public UserControl1()
+		public MyDeskBand()
         {
             InitializeComponent();
             userActivityHook.KeyDown += new KeyEventHandler(userActivityHook_KeyDown);
@@ -60,38 +60,17 @@ namespace KeyLockIndicatorDeskBand
 
         private void lbNum_Click(object sender, EventArgs e)
         {
-			if (frmSetting == null || frmSetting.IsDisposed)
-			{
-				frmSetting = new frmSetting(lbNum, lbCaps, lbScroll);
-			}
-			if (!frmSetting.Visible)
-			{
-				frmSetting.ShowDialog();
-			}
+			
 		}
 
         private void lbCaps_Click(object sender, EventArgs e)
         {
-			if (frmSetting == null || frmSetting.IsDisposed)
-			{
-				frmSetting = new frmSetting(lbNum, lbCaps, lbScroll);
-			}
-			if (!frmSetting.Visible)
-			{
-				frmSetting.ShowDialog();
-			}
+			
 		}
 
         private void lbScroll_Click(object sender, EventArgs e)
         {
-			if (frmSetting == null || frmSetting.IsDisposed)
-			{
-				frmSetting = new frmSetting(lbNum, lbCaps, lbScroll);
-			}
-			if (!frmSetting.Visible)
-			{
-				frmSetting.ShowDialog();
-			}
+			
 		}
 
         private void UserControl1_Load(object sender, EventArgs e)
@@ -111,10 +90,11 @@ namespace KeyLockIndicatorDeskBand
 			string[] array = File.ReadAllLines(path);
 			if (array.Length == 6)
 			{
-				Color foreColor = ColorTranslator.FromHtml(array[0]);
+				Color foreColor1 = ColorTranslator.FromHtml(array[0]);
 				Color foreColor2 = ColorTranslator.FromHtml(array[1]);
 				Color foreColor3 = ColorTranslator.FromHtml(array[2]);
-				lbNum.ForeColor = foreColor;
+				
+				lbNum.ForeColor = foreColor1;
 				lbNum.Visible = bool.Parse(array[3]);
 				lbCaps.ForeColor = foreColor2;
 				lbCaps.Visible = bool.Parse(array[4]);

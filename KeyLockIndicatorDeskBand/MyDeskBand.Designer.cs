@@ -1,6 +1,6 @@
 ﻿namespace KeyLockIndicatorDeskBand
 {
-    partial class UserControl1
+    partial class MyDeskBand
     {
         /// <summary>
         /// Required designer variable.
@@ -33,6 +33,9 @@
             this.lbCaps = new System.Windows.Forms.Label();
             this.lbScroll = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.customColorDialog1 = new CustomDialog.CustomColorDialog();
+            this.customColorDialog2 = new CustomDialog.CustomColorDialog();
+            this.customColorDialog3 = new CustomDialog.CustomColorDialog();
             this.SuspendLayout();
             // 
             // lbNum
@@ -74,6 +77,18 @@
             this.toolTip1.SetToolTip(this.lbScroll, "Srcoll Lock");
             this.lbScroll.Click += new System.EventHandler(this.lbScroll_Click);
             // 
+            // customColorDialog1
+            // 
+            this.customColorDialog1.FullOpen = true;
+            // 
+            // customColorDialog2
+            // 
+            this.customColorDialog2.FullOpen = true;
+            // 
+            // customColorDialog3
+            // 
+            this.customColorDialog3.FullOpen = true;
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -94,5 +109,8 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label lbCaps;
         private System.Windows.Forms.Label lbScroll;
+        private CustomDialog.CustomColorDialog customColorDialog1;
+        private CustomDialog.CustomColorDialog customColorDialog2;
+        private CustomDialog.CustomColorDialog customColorDialog3;
     }
 }
