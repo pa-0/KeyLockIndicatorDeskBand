@@ -15,17 +15,19 @@ namespace KeyLockIndicatorDeskBand
     public partial class MyDeskBand : UserControl
     {
         UserActivityHook userActivityHook = new UserActivityHook();
+        bool isNum, isCaps, isScroll;
         public MyDeskBand()
         {
             InitializeComponent();
             userActivityHook.KeyDown += new KeyEventHandler(userActivityHook_KeyDown);
+            isNum = isCaps = isScroll = true;
         }
 
         private void userActivityHook_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.NumLock)
             {
-                if (!Control.IsKeyLocked(Keys.NumLock))
+                if (!Control.IsKeyLocked(Keys.NumLock)&& isNum)
                 {
                     lbNum.Visible = true;
                 }
@@ -36,7 +38,7 @@ namespace KeyLockIndicatorDeskBand
             }
             if (e.KeyCode == Keys.Capital)
             {
-                if (!Control.IsKeyLocked(Keys.Capital))
+                if (!Control.IsKeyLocked(Keys.Capital)&&isCaps)
                 {
                     lbCaps.Visible = true;
                 }
@@ -47,7 +49,7 @@ namespace KeyLockIndicatorDeskBand
             }
             if (e.KeyCode == Keys.Scroll)
             {
-                if (!Control.IsKeyLocked(Keys.Scroll))
+                if (!Control.IsKeyLocked(Keys.Scroll) && isScroll)
                 {
                     lbScroll.Visible = true;
                 }
@@ -134,28 +136,29 @@ namespace KeyLockIndicatorDeskBand
                 Color foreColor3 = ColorTranslator.FromHtml(array[2]);
 
                 lbNum.ForeColor = foreColor1;
-                lbNum.Visible = bool.Parse(array[3]);
+                isNum = lbNum.Visible = bool.Parse(array[3]);
                 lbCaps.ForeColor = foreColor2;
-                lbCaps.Visible = bool.Parse(array[4]);
+                isCaps =lbCaps.Visible = bool.Parse(array[4]);
                 lbScroll.ForeColor = foreColor3;
-                lbScroll.Visible = bool.Parse(array[5]);
+                isScroll = lbScroll.Visible = bool.Parse(array[5]);
             }
-            if (Control.IsKeyLocked(Keys.NumLock))
+            if (Control.IsKeyLocked(Keys.NumLock) && isNum)
             {
-                lbNum.Font = new Font(lbNum.Font, FontStyle.Bold);
+                lbNum.Visible = true;
             }
-            if (Control.IsKeyLocked(Keys.Capital))
+            if (Control.IsKeyLocked(Keys.Capital) && isCaps)
             {
-                lbCaps.Font = new Font(lbCaps.Font, FontStyle.Bold);
+                lbCaps.Visible = true;
             }
-            if (Control.IsKeyLocked(Keys.Scroll))
+            if (Control.IsKeyLocked(Keys.Scroll) && isScroll)
             {
-                lbScroll.Font = new Font(lbScroll.Font, FontStyle.Bold);
+                lbScroll.Visible = true;
             }
         }
 
         private void showNumToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
         {
+            isNum = lbNum.Visible = showNumToolStripMenuItem.Checked;
             SaveSettings();
         }
 
@@ -163,11 +166,13 @@ namespace KeyLockIndicatorDeskBand
 
         private void showCapsToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
         {
+            isCaps = lbCaps.Visible = showCapsToolStripMenuItem.Checked;
             SaveSettings();
         }
 
         private void showScrollToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
         {
+            isScroll = lbScroll.Visible = showScrollToolStripMenuItem.Checked;
             SaveSettings();
         }
         private void SaveSettings()

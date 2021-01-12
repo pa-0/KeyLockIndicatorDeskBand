@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.lbNum = new System.Windows.Forms.Label();
-            this.lbCaps = new System.Windows.Forms.Label();
-            this.lbScroll = new System.Windows.Forms.Label();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.showNumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showCapsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showScrollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbCaps = new System.Windows.Forms.Label();
+            this.lbScroll = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +54,42 @@
             this.lbNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lbNum, "Num Lock");
             this.lbNum.Click += new System.EventHandler(this.lbNum_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showNumToolStripMenuItem,
+            this.showCapsToolStripMenuItem,
+            this.showScrollToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(161, 70);
+            // 
+            // showNumToolStripMenuItem
+            // 
+            this.showNumToolStripMenuItem.Checked = true;
+            this.showNumToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.showNumToolStripMenuItem.Name = "showNumToolStripMenuItem";
+            this.showNumToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.showNumToolStripMenuItem.Text = "Show NumLock";
+            this.showNumToolStripMenuItem.CheckedChanged += new System.EventHandler(this.showNumToolStripMenuItem_CheckedChanged);
+            // 
+            // showCapsToolStripMenuItem
+            // 
+            this.showCapsToolStripMenuItem.Checked = true;
+            this.showCapsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.showCapsToolStripMenuItem.Name = "showCapsToolStripMenuItem";
+            this.showCapsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.showCapsToolStripMenuItem.Text = "Show CapsLock";
+            this.showCapsToolStripMenuItem.CheckedChanged += new System.EventHandler(this.showCapsToolStripMenuItem_CheckedChanged);
+            // 
+            // showScrollToolStripMenuItem
+            // 
+            this.showScrollToolStripMenuItem.Checked = true;
+            this.showScrollToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.showScrollToolStripMenuItem.Name = "showScrollToolStripMenuItem";
+            this.showScrollToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.showScrollToolStripMenuItem.Text = "Show ScrollLock";
+            this.showScrollToolStripMenuItem.CheckedChanged += new System.EventHandler(this.showScrollToolStripMenuItem_CheckedChanged);
             // 
             // lbCaps
             // 
@@ -85,53 +121,17 @@
             this.toolTip1.SetToolTip(this.lbScroll, "Srcoll Lock");
             this.lbScroll.Click += new System.EventHandler(this.lbScroll_Click);
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showNumToolStripMenuItem,
-            this.showCapsToolStripMenuItem,
-            this.showScrollToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 92);
-            // 
-            // showNumToolStripMenuItem
-            // 
-            this.showNumToolStripMenuItem.Checked = true;
-            this.showNumToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.showNumToolStripMenuItem.Name = "showNumToolStripMenuItem";
-            this.showNumToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.showNumToolStripMenuItem.Text = "Show NumLock";
-            this.showNumToolStripMenuItem.CheckedChanged += new System.EventHandler(this.showNumToolStripMenuItem_CheckedChanged);
-            // 
-            // showCapsToolStripMenuItem
-            // 
-            this.showCapsToolStripMenuItem.Checked = true;
-            this.showCapsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.showCapsToolStripMenuItem.Name = "showCapsToolStripMenuItem";
-            this.showCapsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.showCapsToolStripMenuItem.Text = "Show CapsLock";
-            this.showCapsToolStripMenuItem.CheckedChanged += new System.EventHandler(this.showCapsToolStripMenuItem_CheckedChanged);
-            // 
-            // showScrollToolStripMenuItem
-            // 
-            this.showScrollToolStripMenuItem.Checked = true;
-            this.showScrollToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.showScrollToolStripMenuItem.Name = "showScrollToolStripMenuItem";
-            this.showScrollToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.showScrollToolStripMenuItem.Text = "Show ScrollLock";
-            this.showScrollToolStripMenuItem.CheckedChanged += new System.EventHandler(this.showScrollToolStripMenuItem_CheckedChanged);
-            // 
             // MyDeskBand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.lbScroll);
             this.Controls.Add(this.lbCaps);
             this.Controls.Add(this.lbNum);
             this.Name = "MyDeskBand";
-            this.Size = new System.Drawing.Size(91, 35);
+            this.Size = new System.Drawing.Size(88, 35);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
