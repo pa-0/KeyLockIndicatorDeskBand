@@ -30,6 +30,7 @@ namespace TestControl
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.userControl11 = new TestControl.UserControl1();
             this.SuspendLayout();
             // 
             // button1
@@ -42,11 +43,20 @@ namespace TestControl
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // userControl11
+            // 
+            this.userControl11.BackColor = System.Drawing.Color.Transparent;
+            this.userControl11.Location = new System.Drawing.Point(13, 13);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(150, 115);
+            this.userControl11.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(320, 140);
+            this.Controls.Add(this.userControl11);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -58,6 +68,7 @@ namespace TestControl
 
         #endregion
         private System.Windows.Forms.Button button1;
+        private UserControl1 userControl11;
     }
 }
 
