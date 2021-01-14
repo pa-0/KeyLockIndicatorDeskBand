@@ -35,12 +35,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FF6714A4508CE0B8CDC61387AAB4DC3A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -48,6 +42,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_11EAE118ECBA79F2F2D8269AF795E90C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_FF6714A4508CE0B8CDC61387AAB4DC3A"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -122,62 +122,6 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_85FD6355D7984074AEB6701D496AA0B8"
-            {
-            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
-            "FileType" = "3:1"
-            "InstallAction" = "3:4"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_F25C0BEC_723F_4142_8584_1057B1DC8A7D"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_B60452C99A07405496043A11CB57BBA8"
-            {
-            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
-            "FileType" = "3:1"
-            "InstallAction" = "3:2"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_37C28F47_D70E_439C_A17E_CC188DB4CAD2"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_ED341819043347E8ABE9F9BED2A43E6D"
-            {
-            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
-            "FileType" = "3:1"
-            "InstallAction" = "3:3"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_C90B2A5B_8D21_4BD5_849C_DC1A67EF1FE1"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_F0409CD33700427DA382BD14D4A64DC5"
-            {
-            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
-            "FileType" = "3:1"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_A5845D58_EADE_4296_B2CC_15480B8AF8DA"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
         }
         "DefaultFeature"
         {
@@ -340,9 +284,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Setup"
+        "ProductName" = "8:KeyLockIndicator"
         "ProductCode" = "8:{602EBD83-DE3E-42AD-B65D-FD85B5281EBB}"
-        "PackageCode" = "8:{5EA2955B-307D-4D2C-82E5-89683C56DDCC}"
+        "PackageCode" = "8:{E9D76537-F708-49DD-A0CE-7C1C25323D44}"
         "UpgradeCode" = "8:{443AA93B-B1B5-42A2-BEF5-6437D6FB2A25}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -880,7 +824,7 @@
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
+            "ProjectOutputGroupRegister" = "3:2"
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{4D5306F9-2E25-4604-AF79-A18C83909CAD}"
