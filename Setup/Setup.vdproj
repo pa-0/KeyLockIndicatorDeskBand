@@ -16,38 +16,14 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_646F7A784B5F14E19186A92FD1966F75"
-        "OwnerKey" = "8:_97B78BAE4A154FF6AE68C71301E24C88"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_97B78BAE4A154FF6AE68C71301E24C88"
+        "MsmKey" = "8:_670C9F54C33843F1A231F22814816021"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_A54F8BAA148F1342E1BA8C493BC2952D"
-        "OwnerKey" = "8:_97B78BAE4A154FF6AE68C71301E24C88"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_97B78BAE4A154FF6AE68C71301E24C88"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_646F7A784B5F14E19186A92FD1966F75"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A54F8BAA148F1342E1BA8C493BC2952D"
+        "OwnerKey" = "8:_670C9F54C33843F1A231F22814816021"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -126,7 +102,7 @@
             {
             "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
             "Condition" = "8:"
-            "Object" = "8:_97B78BAE4A154FF6AE68C71301E24C88"
+            "Object" = "8:"
             "FileType" = "3:1"
             "InstallAction" = "3:2"
             "Arguments" = "8:"
@@ -140,7 +116,7 @@
             {
             "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
             "Condition" = "8:"
-            "Object" = "8:_97B78BAE4A154FF6AE68C71301E24C88"
+            "Object" = "8:"
             "FileType" = "3:1"
             "InstallAction" = "3:3"
             "Arguments" = "8:"
@@ -154,7 +130,7 @@
             {
             "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
             "Condition" = "8:"
-            "Object" = "8:_97B78BAE4A154FF6AE68C71301E24C88"
+            "Object" = "8:"
             "FileType" = "3:1"
             "InstallAction" = "3:1"
             "Arguments" = "8:"
@@ -168,7 +144,7 @@
             {
             "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
             "Condition" = "8:"
-            "Object" = "8:_97B78BAE4A154FF6AE68C71301E24C88"
+            "Object" = "8:"
             "FileType" = "3:1"
             "InstallAction" = "3:4"
             "Arguments" = "8:"
@@ -201,68 +177,6 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_646F7A784B5F14E19186A92FD1966F75"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SharpShell, Version=2.7.2.0, Culture=neutral, PublicKeyToken=f14dc899472fe6fb, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_646F7A784B5F14E19186A92FD1966F75"
-                    {
-                    "Name" = "8:SharpShell.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:SharpShell.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_F7BF76308395470EB21A8AE67CBF0D8F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A54F8BAA148F1342E1BA8C493BC2952D"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:CustomDialog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ca0c76e42af9930c, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_A54F8BAA148F1342E1BA8C493BC2952D"
-                    {
-                    "Name" = "8:CustomDialog.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:CustomDialog.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_F7BF76308395470EB21A8AE67CBF0D8F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
         }
         "FileType"
         {
@@ -350,12 +264,12 @@
         "DetectNewerInstalledVersion" = "11:FALSE"
         "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:HP Inc."
+        "Manufacturer" = "8:KienNT"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:Setup"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:HP Inc."
+        "ARPCONTACT" = "8:KienNT"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
@@ -861,9 +775,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_97B78BAE4A154FF6AE68C71301E24C88"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_670C9F54C33843F1A231F22814816021"
             {
-            "SourcePath" = "8:..\\KeyLockIndicatorDeskBand\\obj\\Release\\KeyLockIndicatorDeskBand.dll"
+            "SourcePath" = "8:..\\CustomDialog\\obj\\Release\\CustomDialog.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_F7BF76308395470EB21A8AE67CBF0D8F"
@@ -883,7 +797,7 @@
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
-            "OutputProjectGuid" = "8:{4D5306F9-2E25-4604-AF79-A18C83909CAD}"
+            "OutputProjectGuid" = "8:{5DB8E7DE-2774-4F62-A8F0-18B491807D52}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {
