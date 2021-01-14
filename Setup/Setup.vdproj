@@ -122,6 +122,62 @@
     {
         "CustomAction"
         {
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_0392B8AA05FB434DA35205C227A26CA0"
+            {
+            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+            "FileType" = "3:1"
+            "InstallAction" = "3:2"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_5BE6982A_07CC_4E1F_9284_E81852844C7D"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_26E44B69976544C89FDF51DCABEDE5B9"
+            {
+            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+            "FileType" = "3:1"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_BA12E556_CD1D_4B71_96DE_EE7534014F57"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_71D652CF497D4FCC86E21D2B115F7BAF"
+            {
+            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+            "FileType" = "3:1"
+            "InstallAction" = "3:4"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_21F85606_CF6D_4A77_9E3C_AE128B50B5FB"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_A58CFD1FC5714B4596DC487A2174CB17"
+            {
+            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+            "FileType" = "3:1"
+            "InstallAction" = "3:3"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_3CC99A35_781E_460A_9713_5B57CBB5363F"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
         }
         "DefaultFeature"
         {
