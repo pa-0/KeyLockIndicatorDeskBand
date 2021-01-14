@@ -53,7 +53,7 @@
             this.lbNum.Text = "N";
             this.lbNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lbNum, "Num Lock");
-            this.lbNum.Click += new System.EventHandler(this.lbNum_Click);
+            this.lbNum.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbNum_MouseClick);
             // 
             // contextMenuStrip1
             // 
@@ -62,34 +62,34 @@
             this.showCapsToolStripMenuItem,
             this.showScrollToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(161, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 92);
             // 
             // showNumToolStripMenuItem
             // 
             this.showNumToolStripMenuItem.Checked = true;
             this.showNumToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.showNumToolStripMenuItem.Name = "showNumToolStripMenuItem";
-            this.showNumToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.showNumToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.showNumToolStripMenuItem.Text = "Show NumLock";
-            this.showNumToolStripMenuItem.CheckedChanged += new System.EventHandler(this.showNumToolStripMenuItem_CheckedChanged);
+            this.showNumToolStripMenuItem.Click += new System.EventHandler(this.showNumToolStripMenuItem_Click);
             // 
             // showCapsToolStripMenuItem
             // 
             this.showCapsToolStripMenuItem.Checked = true;
             this.showCapsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.showCapsToolStripMenuItem.Name = "showCapsToolStripMenuItem";
-            this.showCapsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.showCapsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.showCapsToolStripMenuItem.Text = "Show CapsLock";
-            this.showCapsToolStripMenuItem.CheckedChanged += new System.EventHandler(this.showCapsToolStripMenuItem_CheckedChanged);
+            this.showCapsToolStripMenuItem.Click += new System.EventHandler(this.showCapsToolStripMenuItem_Click);
             // 
             // showScrollToolStripMenuItem
             // 
             this.showScrollToolStripMenuItem.Checked = true;
             this.showScrollToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.showScrollToolStripMenuItem.Name = "showScrollToolStripMenuItem";
-            this.showScrollToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.showScrollToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.showScrollToolStripMenuItem.Text = "Show ScrollLock";
-            this.showScrollToolStripMenuItem.CheckedChanged += new System.EventHandler(this.showScrollToolStripMenuItem_CheckedChanged);
+            this.showScrollToolStripMenuItem.Click += new System.EventHandler(this.showScrollToolStripMenuItem_Click);
             // 
             // lbCaps
             // 
@@ -104,7 +104,7 @@
             this.lbCaps.Text = "C";
             this.lbCaps.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lbCaps, "Caps Lock");
-            this.lbCaps.Click += new System.EventHandler(this.lbCaps_Click);
+            this.lbCaps.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbCaps_MouseClick);
             // 
             // lbScroll
             // 
@@ -119,13 +119,12 @@
             this.lbScroll.Text = "S";
             this.lbScroll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lbScroll, "Srcoll Lock");
-            this.lbScroll.Click += new System.EventHandler(this.lbScroll_Click);
+            this.lbScroll.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbScroll_MouseClick);
             // 
             // MyDeskBand
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.lbScroll);
             this.Controls.Add(this.lbCaps);
@@ -133,6 +132,7 @@
             this.Name = "MyDeskBand";
             this.Size = new System.Drawing.Size(88, 35);
             this.Load += new System.EventHandler(this.UserControl1_Load);
+            this.SizeChanged += new System.EventHandler(this.MyDeskBand_SizeChanged);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
