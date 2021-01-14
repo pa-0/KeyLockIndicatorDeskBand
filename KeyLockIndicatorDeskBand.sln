@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyLockIndicatorDeskBand", "KeyLockIndicatorDeskBand\KeyLockIndicatorDeskBand.csproj", "{4D5306F9-2E25-4604-AF79-A18C83909CAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDialog", "CustomColorDialog\CustomDialog.csproj", "{5DB8E7DE-2774-4F62-A8F0-18B491807D52}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestControl", "TestControl\TestControl.csproj", "{0B75BCCA-7B2F-40FA-8F67-81E70C51DAE2}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{D605EEAE-6920-4B68-B012-6F3BC5BDDAEF}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{BE020A6B-2462-442D-9F96-F9FE8A41FE8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDialog", "CustomDialog\CustomDialog.csproj", "{5DB8E7DE-2774-4F62-A8F0-18B491807D52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,16 +21,16 @@ Global
 		{4D5306F9-2E25-4604-AF79-A18C83909CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D5306F9-2E25-4604-AF79-A18C83909CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D5306F9-2E25-4604-AF79-A18C83909CAD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5DB8E7DE-2774-4F62-A8F0-18B491807D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DB8E7DE-2774-4F62-A8F0-18B491807D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DB8E7DE-2774-4F62-A8F0-18B491807D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DB8E7DE-2774-4F62-A8F0-18B491807D52}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0B75BCCA-7B2F-40FA-8F67-81E70C51DAE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0B75BCCA-7B2F-40FA-8F67-81E70C51DAE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B75BCCA-7B2F-40FA-8F67-81E70C51DAE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B75BCCA-7B2F-40FA-8F67-81E70C51DAE2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D605EEAE-6920-4B68-B012-6F3BC5BDDAEF}.Debug|Any CPU.ActiveCfg = Debug
-		{D605EEAE-6920-4B68-B012-6F3BC5BDDAEF}.Release|Any CPU.ActiveCfg = Release
+		{BE020A6B-2462-442D-9F96-F9FE8A41FE8B}.Debug|Any CPU.ActiveCfg = Debug
+		{BE020A6B-2462-442D-9F96-F9FE8A41FE8B}.Release|Any CPU.ActiveCfg = Release
+		{5DB8E7DE-2774-4F62-A8F0-18B491807D52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB8E7DE-2774-4F62-A8F0-18B491807D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB8E7DE-2774-4F62-A8F0-18B491807D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB8E7DE-2774-4F62-A8F0-18B491807D52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

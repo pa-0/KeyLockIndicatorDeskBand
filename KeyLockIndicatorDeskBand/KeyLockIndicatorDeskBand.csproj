@@ -75,7 +75,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CustomColorDialog\CustomDialog.csproj">
+    <ProjectReference Include="..\CustomDialog\CustomDialog.csproj">
       <Project>{5db8e7de-2774-4f62-a8f0-18b491807d52}</Project>
       <Name>CustomDialog</Name>
     </ProjectReference>
