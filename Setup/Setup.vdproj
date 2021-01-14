@@ -16,14 +16,38 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_670C9F54C33843F1A231F22814816021"
+        "MsmKey" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
+        "MsmKey" = "8:_11EAE118ECBA79F2F2D8269AF795E90C"
+        "OwnerKey" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FF6714A4508CE0B8CDC61387AAB4DC3A"
+        "OwnerKey" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_670C9F54C33843F1A231F22814816021"
+        "OwnerKey" = "8:_FF6714A4508CE0B8CDC61387AAB4DC3A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_11EAE118ECBA79F2F2D8269AF795E90C"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -98,59 +122,59 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_146EA442126B4150936505CEDC1DCAA9"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_85FD6355D7984074AEB6701D496AA0B8"
             {
             "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
             "Condition" = "8:"
-            "Object" = "8:"
-            "FileType" = "3:1"
-            "InstallAction" = "3:2"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_FC9953A7_2BC4_4E75_815A_DA44CF550E98"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_53664962D4BA43BEA233474B393EBAB5"
-            {
-            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
-            "Condition" = "8:"
-            "Object" = "8:"
-            "FileType" = "3:1"
-            "InstallAction" = "3:3"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_0AEB7EB3_4258_49D5_80E1_3B7D21A87112"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_D37F39F3D2EE4AB6A0834B92069891EF"
-            {
-            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
-            "Condition" = "8:"
-            "Object" = "8:"
-            "FileType" = "3:1"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_D70C0BA7_7D6E_43D8_A755_0E05D61358ED"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_E5B5E9A2C8324729AE7B051A5329C995"
-            {
-            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
-            "Condition" = "8:"
-            "Object" = "8:"
+            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
             "FileType" = "3:1"
             "InstallAction" = "3:4"
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_7C16BAF1_DA0F_48C5_9939_3088844472D3"
+            "Identifier" = "8:_F25C0BEC_723F_4142_8584_1057B1DC8A7D"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_B60452C99A07405496043A11CB57BBA8"
+            {
+            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+            "FileType" = "3:1"
+            "InstallAction" = "3:2"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_37C28F47_D70E_439C_A17E_CC188DB4CAD2"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_ED341819043347E8ABE9F9BED2A43E6D"
+            {
+            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+            "FileType" = "3:1"
+            "InstallAction" = "3:3"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_C90B2A5B_8D21_4BD5_849C_DC1A67EF1FE1"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_F0409CD33700427DA382BD14D4A64DC5"
+            {
+            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+            "FileType" = "3:1"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_A5845D58_EADE_4296_B2CC_15480B8AF8DA"
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:"
             }
@@ -177,6 +201,68 @@
         }
         "File"
         {
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_11EAE118ECBA79F2F2D8269AF795E90C"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:SharpShell, Version=2.7.2.0, Culture=neutral, PublicKeyToken=f14dc899472fe6fb, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_11EAE118ECBA79F2F2D8269AF795E90C"
+                    {
+                    "Name" = "8:SharpShell.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:SharpShell.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_F7BF76308395470EB21A8AE67CBF0D8F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FF6714A4508CE0B8CDC61387AAB4DC3A"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:CustomDialog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ca0c76e42af9930c, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_FF6714A4508CE0B8CDC61387AAB4DC3A"
+                    {
+                    "Name" = "8:CustomDialog.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:CustomDialog.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_F7BF76308395470EB21A8AE67CBF0D8F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -775,9 +861,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_670C9F54C33843F1A231F22814816021"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_02F0032CA3884EFF9CA8FF46AC82E545"
             {
-            "SourcePath" = "8:..\\CustomDialog\\obj\\Release\\CustomDialog.dll"
+            "SourcePath" = "8:..\\KeyLockIndicatorDeskBand\\obj\\Release\\KeyLockIndicatorDeskBand.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_F7BF76308395470EB21A8AE67CBF0D8F"
@@ -797,7 +883,7 @@
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
-            "OutputProjectGuid" = "8:{5DB8E7DE-2774-4F62-A8F0-18B491807D52}"
+            "OutputProjectGuid" = "8:{4D5306F9-2E25-4604-AF79-A18C83909CAD}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {
