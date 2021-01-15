@@ -16,38 +16,38 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+        "MsmKey" = "8:_11EAE118ECBA79F2F2D8269AF795E90C"
+        "OwnerKey" = "8:_D6365B1B0DD547328F663DE25E83B83E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D6365B1B0DD547328F663DE25E83B83E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_11EAE118ECBA79F2F2D8269AF795E90C"
-        "OwnerKey" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_FF6714A4508CE0B8CDC61387AAB4DC3A"
-        "OwnerKey" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_11EAE118ECBA79F2F2D8269AF795E90C"
+        "OwnerKey" = "8:_D6365B1B0DD547328F663DE25E83B83E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_FF6714A4508CE0B8CDC61387AAB4DC3A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D6365B1B0DD547328F663DE25E83B83E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_11EAE118ECBA79F2F2D8269AF795E90C"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -122,59 +122,59 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_0392B8AA05FB434DA35205C227A26CA0"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_5D7830A012FD4C8E9438BFD7E1BB6F2E"
             {
             "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
             "Condition" = "8:"
-            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+            "Object" = "8:_D6365B1B0DD547328F663DE25E83B83E"
             "FileType" = "3:1"
             "InstallAction" = "3:2"
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_5BE6982A_07CC_4E1F_9284_E81852844C7D"
+            "Identifier" = "8:_06162272_A545_4F21_ADE8_016405988E7C"
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:"
             }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_26E44B69976544C89FDF51DCABEDE5B9"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_964B4E390C8E4665A700EDC2B3F7CD6F"
             {
             "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
             "Condition" = "8:"
-            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
-            "FileType" = "3:1"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_BA12E556_CD1D_4B71_96DE_EE7534014F57"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_71D652CF497D4FCC86E21D2B115F7BAF"
-            {
-            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+            "Object" = "8:_D6365B1B0DD547328F663DE25E83B83E"
             "FileType" = "3:1"
             "InstallAction" = "3:4"
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_21F85606_CF6D_4A77_9E3C_AE128B50B5FB"
+            "Identifier" = "8:_66B6BD44_5523_47E8_825C_EEE161A632D0"
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:"
             }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_A58CFD1FC5714B4596DC487A2174CB17"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_A656EF1F8DB74341A97AA549139952B3"
             {
             "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
             "Condition" = "8:"
-            "Object" = "8:_02F0032CA3884EFF9CA8FF46AC82E545"
+            "Object" = "8:_D6365B1B0DD547328F663DE25E83B83E"
+            "FileType" = "3:1"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_F7133DE8_CAA5_48C4_BD2E_94F94F267E5D"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_D69374BBD4F54DDCBB9C910C9D4F5090"
+            {
+            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_D6365B1B0DD547328F663DE25E83B83E"
             "FileType" = "3:1"
             "InstallAction" = "3:3"
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_3CC99A35_781E_460A_9713_5B57CBB5363F"
+            "Identifier" = "8:_177C6867_6592_4B44_AD18_544A531EE8DC"
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:"
             }
@@ -342,7 +342,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:KeyLockIndicator"
         "ProductCode" = "8:{602EBD83-DE3E-42AD-B65D-FD85B5281EBB}"
-        "PackageCode" = "8:{39041B6F-8001-4A1C-BD5B-A16FD41D2613}"
+        "PackageCode" = "8:{A67759B4-30EA-4C07-8C40-C777AD486BB4}"
         "UpgradeCode" = "8:{443AA93B-B1B5-42A2-BEF5-6437D6FB2A25}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -861,7 +861,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_02F0032CA3884EFF9CA8FF46AC82E545"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D6365B1B0DD547328F663DE25E83B83E"
             {
             "SourcePath" = "8:..\\KeyLockIndicatorDeskBand\\obj\\Release\\KeyLockIndicatorDeskBand.dll"
             "TargetName" = "8:"
@@ -880,7 +880,7 @@
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:2"
+            "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{4D5306F9-2E25-4604-AF79-A18C83909CAD}"

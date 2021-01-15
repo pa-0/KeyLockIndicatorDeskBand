@@ -59,6 +59,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeskBandServer.cs" />
+    <Compile Include="Installer1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Installer1.designer.cs">
+      <DependentUpon>Installer1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserActivityHook.cs" />
     <Compile Include="MyDeskBand.cs">
       <SubType>UserControl</SubType>
@@ -70,6 +76,9 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Installer1.resx">
+      <DependentUpon>Installer1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyDeskBand.resx">
       <DependentUpon>MyDeskBand.cs</DependentUpon>
     </EmbeddedResource>
