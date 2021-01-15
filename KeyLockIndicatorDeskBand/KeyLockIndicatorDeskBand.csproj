@@ -60,6 +60,25 @@
     <LangVersion>7.3</LangVersion>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="SharpShell, Version=2.7.2.0, Culture=neutral, PublicKeyToken=f14dc899472fe6fb, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpShell.2.7.2\lib\net40-client\SharpShell.dll</HintPath>
@@ -78,6 +97,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeskBandServer.cs" />
+    <Compile Include="Installer1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Installer1.Designer.cs">
+      <DependentUpon>Installer1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserActivityHook.cs" />
     <Compile Include="MyDeskBand.cs">
       <SubType>UserControl</SubType>
