@@ -28,12 +28,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_FF6714A4508CE0B8CDC61387AAB4DC3A"
-        "OwnerKey" = "8:_D6365B1B0DD547328F663DE25E83B83E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_D6365B1B0DD547328F663DE25E83B83E"
         "MsmSig" = "8:_UNDEFINED"
@@ -42,12 +36,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_11EAE118ECBA79F2F2D8269AF795E90C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FF6714A4508CE0B8CDC61387AAB4DC3A"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -232,37 +220,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FF6714A4508CE0B8CDC61387AAB4DC3A"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:CustomDialog, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ca0c76e42af9930c, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_FF6714A4508CE0B8CDC61387AAB4DC3A"
-                    {
-                    "Name" = "8:CustomDialog.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:CustomDialog.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_F7BF76308395470EB21A8AE67CBF0D8F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
         }
         "FileType"
         {
@@ -342,7 +299,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:KeyLockIndicator"
         "ProductCode" = "8:{602EBD83-DE3E-42AD-B65D-FD85B5281EBB}"
-        "PackageCode" = "8:{0420A2F5-B4C0-4814-B513-90C6BA047646}"
+        "PackageCode" = "8:{3A0762BE-0064-4F65-B10C-F630C038D7D6}"
         "UpgradeCode" = "8:{443AA93B-B1B5-42A2-BEF5-6437D6FB2A25}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -363,7 +320,7 @@
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
-        "TargetPlatform" = "3:1"
+        "TargetPlatform" = "3:0"
         "PreBuildEvent" = "8:"
         "PostBuildEvent" = "8:"
         "RunPostBuildEvent" = "3:1"
@@ -863,7 +820,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D6365B1B0DD547328F663DE25E83B83E"
             {
-            "SourcePath" = "8:..\\KeyLockIndicatorDeskBand\\obj\\Release\\KeyLockIndicatorDeskBand.dll"
+            "SourcePath" = "8:..\\KeyLockIndicatorDeskBand\\obj\\x86\\Release\\KeyLockIndicatorDeskBand.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_F7BF76308395470EB21A8AE67CBF0D8F"
