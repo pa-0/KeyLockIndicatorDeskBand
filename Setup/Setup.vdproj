@@ -333,7 +333,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:KeyLockIndicator"
         "ProductCode" = "8:{E0418EA3-FDDF-4EF7-96B9-CEF08D3B0238}"
-        "PackageCode" = "8:{2B89A29C-CF63-4579-9E03-BD7F0F527852}"
+        "PackageCode" = "8:{5B039384-92D7-4B5A-8A5E-7F10D7D1C96B}"
         "UpgradeCode" = "8:{44886AFF-7AA7-428A-982E-47300FACB3D5}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
