@@ -16,7 +16,7 @@ namespace KeyLockIndicatorDeskBand
     {
         private const string PARAM = "targetdir";
         private const string FILE_NAME = "KeyLockIndicatorDeskBand.dll";
-        private readonly string PROGRAM_NAME = GetFrameworkDirectory() + "regasm.exe";
+        private readonly string PROGRAM_NAME = "";// GetFrameworkDirectory() + "regasm.exe";
         private const string UNREGISTER = "/unregister ";
         private const string CODEBASE = "/codebase ";
         private const string BACKSLASH = "\"";
@@ -35,10 +35,10 @@ namespace KeyLockIndicatorDeskBand
             string filepath = BACKSLASH + path + FILE_NAME + BACKSLASH;
             string command = PROGRAM_NAME;
             string args = CODEBASE + filepath;
-            var process = Process.Start(command, args);
-            string info = process.StandardOutput.ReadToEnd();
-            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+ @"\AI.txt", info);
-            process.Close();
+            //var process = Process.Start(command, args);
+            //string info = process.StandardOutput.ReadToEnd();
+            //File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop)+ @"\AI.txt", info);
+            //process.Close();
         }
 
         private void Installer1_AfterUninstall(object sender, InstallEventArgs e)
@@ -47,10 +47,10 @@ namespace KeyLockIndicatorDeskBand
             string filepath = BACKSLASH + path + FILE_NAME + BACKSLASH;
             string command = PROGRAM_NAME;
             string args = UNREGISTER + filepath;
-            var process = Process.Start(command, args);
-            string info = process.StandardOutput.ReadToEnd();
-            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\AU.txt", info);
-            process.Close();
+            //var process = Process.Start(command, args);
+            //string info = process.StandardOutput.ReadToEnd();
+            //File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\AU.txt", info);
+            //process.Close();
         }
 
         private void Installer1_Committed(object sender, InstallEventArgs e)
@@ -59,10 +59,10 @@ namespace KeyLockIndicatorDeskBand
             string filepath = BACKSLASH + path + FILE_NAME + BACKSLASH;
             string command = PROGRAM_NAME;
             string args = CODEBASE + filepath;
-            var process = Process.Start(command, args);
-            string info = process.StandardOutput.ReadToEnd();
-            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\C.txt", info);
-            process.Close();
+            //var process = Process.Start(command, args);
+            //string info = process.StandardOutput.ReadToEnd();
+            //File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\C.txt", info);
+            //process.Close();
         }
 
         private void Installer1_AfterRollback(object sender, InstallEventArgs e)
@@ -71,10 +71,10 @@ namespace KeyLockIndicatorDeskBand
             string filepath = BACKSLASH + path + FILE_NAME + BACKSLASH;
             string command = PROGRAM_NAME;
             string args = UNREGISTER + filepath;
-            var process = Process.Start(command, args);
-            string info = process.StandardOutput.ReadToEnd();
-            File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\AR.txt", info);
-            process.Close();
+            //var process = Process.Start(command, args);
+            //string info = process.StandardOutput.ReadToEnd();
+            //File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\AR.txt", info);
+            //process.Close();
         }
 
         public static string GetFrameworkDirectory()

@@ -35,12 +35,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FF6714A4508CE0B8CDC61387AAB4DC3A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_D6365B1B0DD547328F663DE25E83B83E"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -48,6 +42,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_11EAE118ECBA79F2F2D8269AF795E90C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_FF6714A4508CE0B8CDC61387AAB4DC3A"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -122,21 +122,7 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_2920DD09C099491A9FF884AFFC537A9E"
-            {
-            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_D6365B1B0DD547328F663DE25E83B83E"
-            "FileType" = "3:1"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_BE8D5CDF_BD8A_42FB_930E_E740A19640AF"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_459104608CA948C48F523D9BDE9BFD63"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_36E5C355A88547E286849F394BE622DB"
             {
             "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
             "Condition" = "8:"
@@ -146,11 +132,11 @@
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_C54609D5_C3FF_4E36_B888_4B696E9F345A"
+            "Identifier" = "8:_0088C311_13F5_439E_847C_86A029A20AB3"
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:"
             }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_C162956C9E314DB5B0692468F74FA7D5"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_487872DDAEF74713826C58537C789361"
             {
             "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
             "Condition" = "8:"
@@ -160,11 +146,25 @@
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_D74861E2_A291_4649_9907_78B91DEF9FE8"
+            "Identifier" = "8:_243D8757_893E_4761_8EED_06FB7EF36AE9"
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:"
             }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_DC226EA951AB40C9A907991213617B21"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_87A320AECF7C4C7ABD1EFDAAAAD85D53"
+            {
+            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_D6365B1B0DD547328F663DE25E83B83E"
+            "FileType" = "3:1"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_60E20FEA_ECE5_4277_8187_DAD6F2DFED8B"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_ADCD782D6F534088BE671FF6956026E8"
             {
             "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
             "Condition" = "8:"
@@ -174,7 +174,7 @@
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_733D471A_9258_4422_94DF_8EE7E8638DB7"
+            "Identifier" = "8:_E578D02F_8DC7_48E9_99A8_9EDD96FFC98E"
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:"
             }
@@ -342,7 +342,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:KeyLockIndicator"
         "ProductCode" = "8:{602EBD83-DE3E-42AD-B65D-FD85B5281EBB}"
-        "PackageCode" = "8:{38FB1C49-09F6-4EC6-8618-5A90636F701F}"
+        "PackageCode" = "8:{0420A2F5-B4C0-4814-B513-90C6BA047646}"
         "UpgradeCode" = "8:{443AA93B-B1B5-42A2-BEF5-6437D6FB2A25}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
