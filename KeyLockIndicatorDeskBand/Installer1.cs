@@ -120,7 +120,7 @@ namespace KeyLockIndicatorDeskBand
 
             // Retrieve the install root path for the framework
             string installRoot = netFramework.GetValue(ROOT_KEY).ToString();
-
+            MessageBox.Show(installRoot);
             // Retrieve the version of the framework executing this program
             string version = string.Format(Format,
              Environment.Version.Major,
