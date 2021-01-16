@@ -24,51 +24,12 @@ namespace KeyLockIndicatorDeskBand
         private const string ROOT_KEY = "InstallRoot";
         private const string Format = @"v{0}.{1}.{2}\";
         private const string CMD = "cmd.exe";
-        private const string PARAM_OUT = "/k ";//K or c
+        private const string PARAM_OUT = "/c ";//K or c
         private const string SPACE = " ";
 
         public Installer1()
         {
             InitializeComponent();
-        }
-
-        private void Installer1_AfterInstall(object sender, InstallEventArgs e)
-        {
-            //string path = this.Context.Parameters[PARAM];
-            //if (path.EndsWith(Path.DirectorySeparatorChar.ToString()+ Path.DirectorySeparatorChar))
-            //    path = path.Replace(Path.DirectorySeparatorChar.ToString() + Path.DirectorySeparatorChar, Path.DirectorySeparatorChar.ToString());
-            ////MessageBox.Show(path);
-            //string filepath = DOUBLE_QUOTE + path + FILE_NAME + DOUBLE_QUOTE;
-            //string command = PROGRAM_NAME;
-            //string args = CODEBASE + filepath;
-            ////MessageBox.Show(command);
-            ////MessageBox.Show(args);
-            //ProcessStartInfo proc = new ProcessStartInfo();
-            //proc.FileName = CMD;
-            //proc.Arguments = PARAM_OUT + command + SPACE + args;
-            //Process.Start(proc);
-            ////var process = Process.Start(command, args);
-            ////string info = process.StandardOutput.ReadToEnd();
-            ////File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\AI.txt", info);
-            ////process.Close();
-        }
-
-        private void Installer1_AfterUninstall(object sender, InstallEventArgs e)
-        {
-            string path = this.Context.Parameters[PARAM];
-            if (path.EndsWith(Path.DirectorySeparatorChar.ToString() + Path.DirectorySeparatorChar))
-                path = path.Replace(Path.DirectorySeparatorChar.ToString() + Path.DirectorySeparatorChar, Path.DirectorySeparatorChar.ToString());
-            string filepath = DOUBLE_QUOTE + path + FILE_NAME + DOUBLE_QUOTE;
-            string command = PROGRAM_NAME;
-            string args = UNREGISTER + filepath;
-            //MessageBox.Show("AU");
-            ProcessStartInfo proc = new ProcessStartInfo();
-            proc.FileName = CMD;
-            proc.Arguments = PARAM_OUT + command + SPACE + args;
-            Process.Start(proc);
-            //string info = process.StandardOutput.ReadToEnd();
-            //File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\AU.txt", info);
-            //process.Close();
         }
 
         private void Installer1_Committed(object sender, InstallEventArgs e)
@@ -92,24 +53,6 @@ namespace KeyLockIndicatorDeskBand
             //process.Close();
         }
 
-        private void Installer1_AfterRollback(object sender, InstallEventArgs e)
-        {
-            //string path = this.Context.Parameters[PARAM];
-            //if (path.EndsWith(Path.DirectorySeparatorChar.ToString() + Path.DirectorySeparatorChar))
-            //    path = path.Replace(Path.DirectorySeparatorChar.ToString() + Path.DirectorySeparatorChar, Path.DirectorySeparatorChar.ToString());
-            //string filepath = DOUBLE_QUOTE + path + FILE_NAME + DOUBLE_QUOTE;
-            //string command = PROGRAM_NAME;
-            //string args = UNREGISTER + filepath;
-            ////MessageBox.Show("AR");
-            //ProcessStartInfo proc = new ProcessStartInfo();
-            //proc.FileName = CMD;
-            //proc.Arguments = PARAM_OUT + command + SPACE + args;
-            //Process.Start(proc);
-            ////string info = process.StandardOutput.ReadToEnd();
-            ////File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\AR.txt", info);
-            ////process.Close();
-        }
-
         public static string GetFrameworkDirectory()
         {
             // This is the location of the .Net Framework Registry Key
@@ -129,6 +72,25 @@ namespace KeyLockIndicatorDeskBand
 
             // Return the path of the framework
             return System.IO.Path.Combine(installRoot, version);
+        }
+
+        private void Installer1_BeforeUninstall(object sender, InstallEventArgs e)
+        {
+            string path = this.Context.Parameters[PARAM];
+            if (path.EndsWith(Path.DirectorySeparatorChar.ToString() + Path.DirectorySeparatorChar))
+                path = path.Replace(Path.DirectorySeparatorChar.ToString() + Path.DirectorySeparatorChar, Path.DirectorySeparatorChar.ToString());
+            string filepath = DOUBLE_QUOTE + path + FILE_NAME + DOUBLE_QUOTE;
+            string command = PROGRAM_NAME;
+            string args = UNREGISTER + filepath;
+            //MessageBox.Show("AU");
+            ProcessStartInfo proc = new ProcessStartInfo();
+            proc.FileName = CMD;
+            proc.Arguments = PARAM_OUT + command + SPACE + args;
+            Process.Start(proc);
+            //var process = Process.Start(command, args);
+            //string info = process.StandardOutput.ReadToEnd();
+            //File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\AU.txt", info);
+            //process.Close();
         }
     }
 }
