@@ -7,6 +7,7 @@ using System.Configuration.Install;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace KeyLockIndicatorDeskBand
@@ -24,7 +25,7 @@ namespace KeyLockIndicatorDeskBand
         private const string ROOT_KEY = "InstallRoot";
         private const string Format = @"v{0}.{1}.{2}\";
         private const string CMD = "cmd.exe";
-        private const string PARAM_OUT = "/c ";//K or c
+        private const string PARAM_OUT = "/c ";//K to show output or c to not show
         private const string SPACE = " ";
 
         public Installer1()
@@ -83,10 +84,11 @@ namespace KeyLockIndicatorDeskBand
             string command = PROGRAM_NAME;
             string args = UNREGISTER + filepath;
             //MessageBox.Show("AU");
-            ProcessStartInfo proc = new ProcessStartInfo();
-            proc.FileName = CMD;
-            proc.Arguments = PARAM_OUT + command + SPACE + args;
-            Process.Start(proc);
+            ProcessStartInfo procinfo = new ProcessStartInfo();
+            procinfo.FileName = CMD;
+            procinfo.Arguments = PARAM_OUT + command + SPACE + args;
+            var proc = Process.Start(procinfo);
+            proc.WaitForExit();
             //var process = Process.Start(command, args);
             //string info = process.StandardOutput.ReadToEnd();
             //File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\AU.txt", info);
