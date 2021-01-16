@@ -121,35 +121,7 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_2CA46493422240208F54C4D1011099DC"
-            {
-            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_9596DB6102C944CFA30970968007F0EE"
-            "FileType" = "3:1"
-            "InstallAction" = "3:2"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_17EDE8E4_C0C7_4B40_80E1_983938D92808"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:/TargetDir=\"[TARGETDIR]\\\""
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_49E8D32030D6421680493FFEE036C05B"
-            {
-            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
-            "Condition" = "8:"
-            "Object" = "8:_9596DB6102C944CFA30970968007F0EE"
-            "FileType" = "3:1"
-            "InstallAction" = "3:1"
-            "Arguments" = "8:"
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_DE85338E_5FBC_4A76_9291_7C0C8039A569"
-            "InstallerClass" = "11:TRUE"
-            "CustomActionData" = "8:/TargetDir=\"[TARGETDIR]\\\""
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_5B556C3493A54712B3D8279D411E9CD8"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_0BD3499B224F4297B2E32D3480B06AB2"
             {
             "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
             "Condition" = "8:"
@@ -159,12 +131,11 @@
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_CEF587E9_3E79_4827_B084_16FD87080AD8"
+            "Identifier" = "8:_2C00E605_5F5F_4DB3_BD94_C5264DA32E4F"
             "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:/TargetDir=\"[TARGETDIR]\\\""
-            "Run64Bit" = "11:FALSE"
             }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_5D565A9A3B264CA493B489D9C95E77F0"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_61516CD24672452792292A72840D00A1"
             {
             "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
             "Condition" = "8:"
@@ -174,8 +145,36 @@
             "Arguments" = "8:"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_5D40FA13_CD82_4E69_9FFE_111C1915D28F"
-            "InstallerClass" = "11:FALSE"
+            "Identifier" = "8:_D700744B_AC48_4CFD_A92B_2AF7E181B158"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:/TargetDir=\"[TARGETDIR]\\\""
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_8AF975C36B574599BDA9D66A4D71B21B"
+            {
+            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_9596DB6102C944CFA30970968007F0EE"
+            "FileType" = "3:1"
+            "InstallAction" = "3:1"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_A27562AC_C087_414E_B1DC_3EF4ADDC2D32"
+            "InstallerClass" = "11:TRUE"
+            "CustomActionData" = "8:/TargetDir=\"[TARGETDIR]\\\""
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_DE2DE5B2D77743C6A57A9400E7C023B9"
+            {
+            "Name" = "8:Primary output from KeyLockIndicatorDeskBand (Active)"
+            "Condition" = "8:"
+            "Object" = "8:_9596DB6102C944CFA30970968007F0EE"
+            "FileType" = "3:1"
+            "InstallAction" = "3:2"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_476DC59F_47AF_4355_B640_39083293FF65"
+            "InstallerClass" = "11:TRUE"
             "CustomActionData" = "8:/TargetDir=\"[TARGETDIR]\\\""
             }
         }
