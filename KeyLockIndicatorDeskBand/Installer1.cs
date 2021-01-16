@@ -44,10 +44,11 @@ namespace KeyLockIndicatorDeskBand
             string args = CODEBASE + filepath;
             //MessageBox.Show(command);
             //MessageBox.Show(args);
-            ProcessStartInfo proc = new ProcessStartInfo();
-            proc.FileName = CMD;
-            proc.Arguments = PARAM_OUT + command + SPACE + args;
-            Process.Start(proc);
+            ProcessStartInfo procinfo = new ProcessStartInfo();
+            procinfo.FileName = CMD;
+            procinfo.Arguments = PARAM_OUT + command + SPACE + args;
+            var proc = Process.Start(procinfo);
+            proc.WaitForExit();
             //var process = Process.Start(command, args);
             //string info = process.StandardOutput.ReadToEnd();
             //File.WriteAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\AI.txt", info);
