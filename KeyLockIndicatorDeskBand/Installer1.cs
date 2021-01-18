@@ -17,7 +17,7 @@ namespace KeyLockIndicatorDeskBand
     {
         private const string PARAM = "TargetDir";
         private const string FILE_NAME = "KeyLockIndicatorDeskBand.dll";
-        private readonly string PROGRAM_NAME = GetFrameworkDirectory() + "regasm.exe";
+        private readonly string PROGRAM_NAME = Path.Combine(GetFrameworkDirectory(), "regasm.exe");
         private const string UNREGISTER = "/unregister ";
         private const string CODEBASE = "/codebase ";
         private const string DOUBLE_QUOTE = "\"";
