@@ -155,19 +155,11 @@ namespace KeyLockIndicatorDeskBand
                 lbScroll.BackColor = backColor3;
                 isScroll = lbScroll.Visible = bool.Parse(array[5]);
             }
-            if (Control.IsKeyLocked(Keys.NumLock) && isNum)
-            {
-                lbNum.Visible = true;
-            }
-            if (Control.IsKeyLocked(Keys.Capital) && isCaps)
-            {
-                lbCaps.Visible = true;
-            }
-            if (Control.IsKeyLocked(Keys.Scroll) && isScroll)
-            {
-                lbScroll.Visible = true;
-            }
+            lbNum.Visible = IsKeyLocked(Keys.NumLock) && isNum;
+            lbCaps.Visible = IsKeyLocked(Keys.Capital) && isCaps;
+            lbScroll.Visible = IsKeyLocked(Keys.Scroll) && isScroll;
         }
+
 
         private void MyDeskBand_SizeChanged(object sender, EventArgs e)
         {
