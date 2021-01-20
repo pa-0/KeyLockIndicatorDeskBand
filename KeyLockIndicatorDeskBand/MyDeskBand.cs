@@ -40,9 +40,9 @@ namespace KeyLockIndicatorDeskBand
                     lbNum.Visible = false;
                 }
             }
-            if (e.KeyCode == Keys.Capital)
+            if (e.KeyCode == Keys.CapsLock)
             {
-                if (!Control.IsKeyLocked(Keys.Capital) && isCaps)
+                if (!Control.IsKeyLocked(Keys.CapsLock) && isCaps)
                 {
                     lbCaps.Visible = true;
                 }
@@ -156,7 +156,7 @@ namespace KeyLockIndicatorDeskBand
                 isScroll = lbScroll.Visible = bool.Parse(array[5]);
             }
             lbNum.Visible = IsKeyLocked(Keys.NumLock) && isNum;
-            lbCaps.Visible = IsKeyLocked(Keys.Capital) && isCaps;
+            lbCaps.Visible = IsKeyLocked(Keys.CapsLock) && isCaps;
             lbScroll.Visible = IsKeyLocked(Keys.Scroll) && isScroll;
         }
 
@@ -170,8 +170,8 @@ namespace KeyLockIndicatorDeskBand
         private void showNumToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showNumToolStripMenuItem.Checked = !showNumToolStripMenuItem.Checked;
-            isNum = lbNum.Visible = showNumToolStripMenuItem.Checked;
-            if (!Control.IsKeyLocked(Keys.NumLock) && isNum)
+            isNum = showNumToolStripMenuItem.Checked;
+            if (Control.IsKeyLocked(Keys.NumLock) && isNum)
             {
                 lbNum.Visible = true;
             }
@@ -185,8 +185,8 @@ namespace KeyLockIndicatorDeskBand
         private void showCapsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showCapsToolStripMenuItem.Checked = !showCapsToolStripMenuItem.Checked;
-            isCaps = lbCaps.Visible = showCapsToolStripMenuItem.Checked;
-            if (!Control.IsKeyLocked(Keys.CapsLock) && isCaps)
+            isCaps = showCapsToolStripMenuItem.Checked;
+            if (Control.IsKeyLocked(Keys.CapsLock)&&isCaps)
             {
                 lbCaps.Visible = true;
             }
@@ -200,8 +200,8 @@ namespace KeyLockIndicatorDeskBand
         private void showScrollToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showScrollToolStripMenuItem.Checked = !showScrollToolStripMenuItem.Checked;
-            isScroll = lbScroll.Visible = showScrollToolStripMenuItem.Checked;
-            if (!Control.IsKeyLocked(Keys.Scroll) && isScroll)
+            isScroll = showScrollToolStripMenuItem.Checked;
+            if (Control.IsKeyLocked(Keys.Scroll)&&isScroll)
             {
                 lbScroll.Visible = true;
             }
