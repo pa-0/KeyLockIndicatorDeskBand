@@ -171,6 +171,10 @@ namespace KeyLockIndicatorDeskBand
         {
             showNumToolStripMenuItem.Checked = !showNumToolStripMenuItem.Checked;
             isNum = lbNum.Visible = showNumToolStripMenuItem.Checked;
+            if (!Control.IsKeyLocked(Keys.NumLock) && isNum)
+            {
+                lbNum.Visible = true;
+            }
             SaveSettings();
         }
 
@@ -178,6 +182,10 @@ namespace KeyLockIndicatorDeskBand
         {
             showCapsToolStripMenuItem.Checked = !showCapsToolStripMenuItem.Checked;
             isCaps = lbCaps.Visible = showCapsToolStripMenuItem.Checked;
+            if (!Control.IsKeyLocked(Keys.CapsLock) && isCaps)
+            {
+                lbCaps.Visible = true;
+            }
             SaveSettings();
         }
 
@@ -185,6 +193,10 @@ namespace KeyLockIndicatorDeskBand
         {
             showScrollToolStripMenuItem.Checked = !showScrollToolStripMenuItem.Checked;
             isScroll = lbScroll.Visible = showScrollToolStripMenuItem.Checked;
+            if (!Control.IsKeyLocked(Keys.Scroll) && isScroll)
+            {
+                lbScroll.Visible = true;
+            }
             SaveSettings();
         }
         private void SaveSettings()
