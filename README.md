@@ -9,3 +9,6 @@ Giao diện khi chỉ có NumLock đang bật:
 
 ![GUI](Out/Img/OnlyNumLock.png?raw=true)
 
+Link cài đặt(Chỉ cho 64 bit):
+
+[Setup](Out/Setup.msi?raw=true)
