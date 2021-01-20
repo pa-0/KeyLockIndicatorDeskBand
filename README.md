@@ -15,4 +15,6 @@ Sau khi khởi động lại thì click chuột phải vào Taskbar, chọn Tool
 Để chỉnh màu nền các Ký hiệu N, C, S, Hãy click chuột trái vào từng ký hiệu, sẽ lên hộp thoại chỉnh màu sắc
 ![GUI](Out/Img/ChoseColor.png?raw=true)
 
-Để vô hiệu hóa các Ký hiệu, tức là khi nhấn các phím Num, Caps, Scroll mà không hiện/tắt thì click chuột phải lên 
+Để vô hiệu hóa các Ký hiệu, tức là khi nhấn các phím Num, Caps, Scroll mà không hiện/tắt thì click chuột phải lên vùng Toolbar, chọn các nút sẽ cho hiện:
+(dùng cho bàn phím có sẵn một số đèn rồi)
+![GUI](Out/Img/ContextMenu.png?raw=true)
