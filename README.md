@@ -3,4 +3,4 @@ Chương trình dùng cho máy mà bàn phím không có các đèn Num, Caps, S
 
 Giao diện chương trình khi các phím Num, Caps, Scroll đang bật:
 
-![GUI](Out/img/GUI.png?raw=true)
+![GUI](Out/Img/GUI.png?raw=true)
