@@ -175,6 +175,10 @@ namespace KeyLockIndicatorDeskBand
             {
                 lbNum.Visible = true;
             }
+            else
+            {
+                lbNum.Visible = false;
+            }
             SaveSettings();
         }
 
@@ -186,6 +190,10 @@ namespace KeyLockIndicatorDeskBand
             {
                 lbCaps.Visible = true;
             }
+            else
+            {
+                lbCaps.Visible = false;
+            }
             SaveSettings();
         }
 
@@ -196,6 +204,10 @@ namespace KeyLockIndicatorDeskBand
             if (!Control.IsKeyLocked(Keys.Scroll) && isScroll)
             {
                 lbScroll.Visible = true;
+            }
+            else
+            {
+                lbScroll.Visible = false;
             }
             SaveSettings();
         }
