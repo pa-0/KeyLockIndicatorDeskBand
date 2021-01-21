@@ -16,53 +16,53 @@ namespace KeyLockIndicatorDeskBand
     {
         private const string FOLDER_NAME = "KeyLockIndicator";
         private const string FILE_NAME = "settings.setting";
-        UserActivityHook userActivityHook = new UserActivityHook();
+        //UserActivityHook userActivityHook = new UserActivityHook();
         bool isNum, isCaps, isScroll;
         Size size = new Size();
         public MyDeskBand()
         {
             InitializeComponent();
-            userActivityHook.KeyDown += new KeyEventHandler(userActivityHook_KeyDown);
+            //userActivityHook.KeyDown += new KeyEventHandler(userActivityHook_KeyDown);
             isNum = isCaps = isScroll = true;
             size = this.Size;
         }
 
-        private void userActivityHook_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.NumLock)
-            {
-                if (!Control.IsKeyLocked(Keys.NumLock) && isNum)
-                {
-                    lbNum.Visible = true;
-                }
-                else
-                {
-                    lbNum.Visible = false;
-                }
-            }
-            if (e.KeyCode == Keys.CapsLock)
-            {
-                if (!Control.IsKeyLocked(Keys.CapsLock) && isCaps)
-                {
-                    lbCaps.Visible = true;
-                }
-                else
-                {
-                    lbCaps.Visible = false;
-                }
-            }
-            if (e.KeyCode == Keys.Scroll)
-            {
-                if (!Control.IsKeyLocked(Keys.Scroll) && isScroll)
-                {
-                    lbScroll.Visible = true;
-                }
-                else
-                {
-                    lbScroll.Visible = false;
-                }
-            }
-        }
+        //private void userActivityHook_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //    if (e.KeyCode == Keys.NumLock)
+        //    {
+        //        if (!Control.IsKeyLocked(Keys.NumLock) && isNum)
+        //        {
+        //            lbNum.Visible = true;
+        //        }
+        //        else
+        //        {
+        //            lbNum.Visible = false;
+        //        }
+        //    }
+        //    if (e.KeyCode == Keys.CapsLock)
+        //    {
+        //        if (!Control.IsKeyLocked(Keys.CapsLock) && isCaps)
+        //        {
+        //            lbCaps.Visible = true;
+        //        }
+        //        else
+        //        {
+        //            lbCaps.Visible = false;
+        //        }
+        //    }
+        //    if (e.KeyCode == Keys.Scroll)
+        //    {
+        //        if (!Control.IsKeyLocked(Keys.Scroll) && isScroll)
+        //        {
+        //            lbScroll.Visible = true;
+        //        }
+        //        else
+        //        {
+        //            lbScroll.Visible = false;
+        //        }
+        //    }
+        //}
         private void lbNum_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -186,7 +186,7 @@ namespace KeyLockIndicatorDeskBand
         {
             showCapsToolStripMenuItem.Checked = !showCapsToolStripMenuItem.Checked;
             isCaps = showCapsToolStripMenuItem.Checked;
-            if (Control.IsKeyLocked(Keys.CapsLock)&&isCaps)
+            if (Control.IsKeyLocked(Keys.CapsLock) && isCaps)
             {
                 lbCaps.Visible = true;
             }
@@ -197,11 +197,12 @@ namespace KeyLockIndicatorDeskBand
             SaveSettings();
         }
 
+
         private void showScrollToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showScrollToolStripMenuItem.Checked = !showScrollToolStripMenuItem.Checked;
             isScroll = showScrollToolStripMenuItem.Checked;
-            if (Control.IsKeyLocked(Keys.Scroll)&&isScroll)
+            if (Control.IsKeyLocked(Keys.Scroll) && isScroll)
             {
                 lbScroll.Visible = true;
             }
@@ -211,6 +212,13 @@ namespace KeyLockIndicatorDeskBand
             }
             SaveSettings();
         }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbScroll.Visible = Control.IsKeyLocked(Keys.Scroll) && isScroll;
+            lbCaps.Visible = Control.IsKeyLocked(Keys.CapsLock) && isCaps;
+            lbNum.Visible = Control.IsKeyLocked(Keys.NumLock) && isNum;
+        }
+
         private void SaveSettings()
         {
             string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), Path.Combine(FOLDER_NAME, FILE_NAME));
