@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using CustomDialog;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using CustomDialog;
 
 namespace TestControl
 {
@@ -27,7 +22,7 @@ namespace TestControl
 
         private void Form1_Shown(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,7 +33,7 @@ namespace TestControl
             {
                 BackColor = ev.CurrentColor;
             };
-            if (customColorDialog1.ShowDialog() != DialogResult.OK) 
+            if (customColorDialog1.ShowDialog() != DialogResult.OK)
             {
                 BackColor = oldColor;
             };

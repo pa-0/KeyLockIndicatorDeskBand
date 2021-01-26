@@ -1,14 +1,9 @@
 ﻿using Microsoft.Win32;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration.Install;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Threading;
-using System.Windows.Forms;
 
 namespace KeyLockIndicatorDeskBand
 {
@@ -65,7 +60,7 @@ namespace KeyLockIndicatorDeskBand
 
             // Retrieve the install root path for the framework
             string installRoot = netFramework.GetValue(ROOT_KEY).ToString();
-            
+
             // Retrieve the version of the framework executing this program
             string version = string.Format(Format,
              Environment.Version.Major,

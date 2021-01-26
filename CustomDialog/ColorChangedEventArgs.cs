@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace CustomDialog
 {
-    public class ColorChangedEventArgs:EventArgs
+    public class ColorChangedEventArgs : EventArgs
     {
         public ColorChangedEventArgs(Color currentColor)
         {
