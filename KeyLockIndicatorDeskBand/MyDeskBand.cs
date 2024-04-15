@@ -208,9 +208,12 @@ namespace KeyLockIndicatorDeskBand
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
-            lbScroll.Visible = Control.IsKeyLocked(Keys.Scroll) && isScroll;
-            lbCaps.Visible = Control.IsKeyLocked(Keys.CapsLock) && isCaps;
-            lbNum.Visible = Control.IsKeyLocked(Keys.NumLock) && isNum;
+            lbScroll.Visible = isScroll;
+            lbCaps.Visible = isCaps;
+            lbNum.Visible = isNum;
+            lbScroll.BackColor = Control.IsKeyLocked(Keys.Scroll) && isScroll? Color.Blue : Color.Gray;
+            lbCaps.BackColor = Control.IsKeyLocked(Keys.CapsLock) && isCaps ? Color.Blue : Color.Gray;
+            lbNum.BackColor = Control.IsKeyLocked(Keys.NumLock) && isNum ? Color.Blue : Color.Gray;
         }
 
         private void SaveSettings()
