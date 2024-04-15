@@ -68,7 +68,11 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SharpShell">
+      <HintPath>..\packages\SharpShell.2.7.2\lib\net40-client\SharpShell.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -123,6 +127,10 @@
     <ProjectReference Include="..\CustomDialog\CustomDialog.csproj">
       <Project>{5db8e7de-2774-4f62-a8f0-18b491807d52}</Project>
       <Name>CustomDialog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KeyLockIndicatorDeskBand\KeyLockIndicatorDeskBand.csproj">
+      <Project>{4D5306F9-2E25-4604-AF79-A18C83909CAD}</Project>
+      <Name>KeyLockIndicatorDeskBand</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

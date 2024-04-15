@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.lbNum = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
             this.showNumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showCapsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showScrollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbCaps = new System.Windows.Forms.Label();
             this.lbScroll = new System.Windows.Forms.Label();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip();
+            this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +47,7 @@
             this.lbNum.ContextMenuStrip = this.contextMenuStrip1;
             this.lbNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbNum.ForeColor = System.Drawing.Color.White;
-            this.lbNum.Location = new System.Drawing.Point(3, 6);
+            this.lbNum.Location = new System.Drawing.Point(32, 6);
             this.lbNum.Name = "lbNum";
             this.lbNum.Size = new System.Drawing.Size(23, 23);
             this.lbNum.TabIndex = 0;
@@ -98,7 +98,7 @@
             this.lbCaps.ContextMenuStrip = this.contextMenuStrip1;
             this.lbCaps.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbCaps.ForeColor = System.Drawing.Color.White;
-            this.lbCaps.Location = new System.Drawing.Point(32, 6);
+            this.lbCaps.Location = new System.Drawing.Point(61, 6);
             this.lbCaps.Name = "lbCaps";
             this.lbCaps.Size = new System.Drawing.Size(23, 23);
             this.lbCaps.TabIndex = 1;
@@ -113,7 +113,7 @@
             this.lbScroll.ContextMenuStrip = this.contextMenuStrip1;
             this.lbScroll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbScroll.ForeColor = System.Drawing.Color.White;
-            this.lbScroll.Location = new System.Drawing.Point(61, 6);
+            this.lbScroll.Location = new System.Drawing.Point(90, 6);
             this.lbScroll.Name = "lbScroll";
             this.lbScroll.Size = new System.Drawing.Size(23, 23);
             this.lbScroll.TabIndex = 1;
@@ -121,6 +121,21 @@
             this.lbScroll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lbScroll, "Srcoll Lock");
             this.lbScroll.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lbScroll_MouseClick);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Gray;
+            this.label1.ContextMenuStrip = this.contextMenuStrip1;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 23);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "BG";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.label1, "Num Lock");
+            this.label1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.label1_MouseClick);
             // 
             // timer1
             // 
@@ -132,11 +147,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbScroll);
             this.Controls.Add(this.lbCaps);
             this.Controls.Add(this.lbNum);
             this.Name = "MyDeskBand";
-            this.Size = new System.Drawing.Size(88, 35);
+            this.Size = new System.Drawing.Size(122, 35);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.SizeChanged += new System.EventHandler(this.MyDeskBand_SizeChanged);
             this.contextMenuStrip1.ResumeLayout(false);
@@ -155,5 +171,6 @@
         private System.Windows.Forms.ToolStripMenuItem showCapsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showScrollToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
     }
 }

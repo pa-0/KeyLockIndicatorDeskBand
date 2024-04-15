@@ -13,6 +13,7 @@ namespace KeyLockIndicatorDeskBand
         //UserActivityHook userActivityHook = new UserActivityHook();
         bool isNum, isCaps, isScroll;
         Size size = new Size();
+        Color lbNumBackColor, lbCapsBackColor, lbScrollBackColor;
         public MyDeskBand()
         {
             InitializeComponent();
@@ -61,11 +62,12 @@ namespace KeyLockIndicatorDeskBand
         {
             if (e.Button == MouseButtons.Left)
             {
+                timer1.Stop();
                 CustomColorDialog customColorDialog1 = new CustomColorDialog();
                 Color oldColor = customColorDialog1.Color = lbNum.BackColor;
                 customColorDialog1.ColorChanged += (o, ev) =>
                 {
-                    lbNum.BackColor = ev.CurrentColor;
+                    lbNumBackColor = lbNum.BackColor = ev.CurrentColor;
                 };
                 if (customColorDialog1.ShowDialog() == DialogResult.OK)
                 {
@@ -75,7 +77,8 @@ namespace KeyLockIndicatorDeskBand
                 {
                     lbNum.BackColor = oldColor;
                 }
-
+                lbNumBackColor = lbNum.BackColor;
+                timer1.Start();
             }
         }
 
@@ -83,11 +86,12 @@ namespace KeyLockIndicatorDeskBand
         {
             if (e.Button == MouseButtons.Left)
             {
+                timer1.Stop();
                 CustomColorDialog customColorDialog1 = new CustomColorDialog();
                 Color oldColor = customColorDialog1.Color = lbCaps.BackColor;
                 customColorDialog1.ColorChanged += (o, ev) =>
                 {
-                    lbCaps.BackColor = ev.CurrentColor;
+                    lbCapsBackColor = lbCaps.BackColor = ev.CurrentColor;
                 };
                 if (customColorDialog1.ShowDialog() == DialogResult.OK)
                 {
@@ -97,6 +101,8 @@ namespace KeyLockIndicatorDeskBand
                 {
                     lbCaps.BackColor = oldColor;
                 }
+                lbCapsBackColor = lbCaps.BackColor;
+                timer1.Start();
             }
         }
 
@@ -104,11 +110,12 @@ namespace KeyLockIndicatorDeskBand
         {
             if (e.Button == MouseButtons.Left)
             {
+                timer1.Stop();
                 CustomColorDialog customColorDialog1 = new CustomColorDialog();
                 Color oldColor = customColorDialog1.Color = lbScroll.BackColor;
                 customColorDialog1.ColorChanged += (o, ev) =>
                 {
-                    lbScroll.BackColor = ev.CurrentColor;
+                    lbScrollBackColor = lbScroll.BackColor = ev.CurrentColor;
                 };
                 if (customColorDialog1.ShowDialog() == DialogResult.OK)
                 {
@@ -118,6 +125,8 @@ namespace KeyLockIndicatorDeskBand
                 {
                     lbScroll.BackColor = oldColor;
                 }
+                lbScrollBackColor = lbScroll.BackColor;
+                timer1.Start();
             }
         }
 
@@ -126,28 +135,30 @@ namespace KeyLockIndicatorDeskBand
             string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), Path.Combine(FOLDER_NAME, FILE_NAME));
             if (!File.Exists(path))
             {
-                string[] contents = new string[3]
+                string[] contents = new string[4]
                 {
                     ColorTranslator.ToHtml(lbNum.BackColor),
                     ColorTranslator.ToHtml(lbCaps.BackColor),
-                    ColorTranslator.ToHtml(lbScroll.BackColor)
+                    ColorTranslator.ToHtml(lbScroll.BackColor),
+                    ColorTranslator.ToHtml(label1.BackColor)
                 };
                 Directory.CreateDirectory(Path.GetDirectoryName(path));
                 File.WriteAllLines(path, contents);
             }
             string[] array = File.ReadAllLines(path);
-            if (array.Length == 6)
+            if (array.Length == 7)
             {
                 Color backColor1 = ColorTranslator.FromHtml(array[0]);
                 Color backColor2 = ColorTranslator.FromHtml(array[1]);
                 Color backColor3 = ColorTranslator.FromHtml(array[2]);
-
-                lbNum.BackColor = backColor1;
-                isNum = lbNum.Visible = bool.Parse(array[3]);
-                lbCaps.BackColor = backColor2;
-                isCaps = lbCaps.Visible = bool.Parse(array[4]);
-                lbScroll.BackColor = backColor3;
-                isScroll = lbScroll.Visible = bool.Parse(array[5]);
+                Color backColor4 = ColorTranslator.FromHtml(array[3]);
+                label1.BackColor = backColor4;
+                lbNumBackColor = lbNum.BackColor = backColor1;
+                isNum = lbNum.Visible = bool.Parse(array[4]);
+                lbCapsBackColor = lbCaps.BackColor = backColor2;
+                isCaps = lbCaps.Visible = bool.Parse(array[5]);
+                lbScrollBackColor = lbScroll.BackColor = backColor3;
+                isScroll = lbScroll.Visible = bool.Parse(array[6]);
             }
             lbNum.Visible = IsKeyLocked(Keys.NumLock) && isNum;
             lbCaps.Visible = IsKeyLocked(Keys.CapsLock) && isCaps;
@@ -174,6 +185,30 @@ namespace KeyLockIndicatorDeskBand
                 lbNum.Visible = false;
             }
             SaveSettings();
+        }
+
+        private void label1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                timer1.Stop();
+                CustomColorDialog customColorDialog1 = new CustomColorDialog();
+                Color oldColor = customColorDialog1.Color = label1.BackColor;
+                customColorDialog1.ColorChanged += (o, ev) =>
+                {
+                    label1.BackColor = ev.CurrentColor;
+                };
+                if (customColorDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    SaveSettings();
+                }
+                else
+                {
+                    label1.BackColor = oldColor;
+                }
+                //lbScrollBackColor = label1.BackColor;
+                timer1.Start();
+            }
         }
 
         private void showCapsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -211,19 +246,23 @@ namespace KeyLockIndicatorDeskBand
             lbScroll.Visible = isScroll;
             lbCaps.Visible = isCaps;
             lbNum.Visible = isNum;
-            lbScroll.BackColor = Control.IsKeyLocked(Keys.Scroll) && isScroll? Color.Blue : Color.Gray;
-            lbCaps.BackColor = Control.IsKeyLocked(Keys.CapsLock) && isCaps ? Color.Blue : Color.Gray;
-            lbNum.BackColor = Control.IsKeyLocked(Keys.NumLock) && isNum ? Color.Blue : Color.Gray;
+            if (isScroll)
+                lbScroll.BackColor = Control.IsKeyLocked(Keys.Scroll) ? lbScrollBackColor : label1.BackColor;
+            if (isCaps)
+                lbCaps.BackColor = Control.IsKeyLocked(Keys.CapsLock) ? lbCapsBackColor : label1.BackColor;
+            if (isNum)
+                lbNum.BackColor = Control.IsKeyLocked(Keys.NumLock) ? lbNumBackColor : label1.BackColor;
         }
 
         private void SaveSettings()
         {
             string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), Path.Combine(FOLDER_NAME, FILE_NAME));
-            string[] contents = new string[6]
+            string[] contents = new string[]
             {
-                 ColorTranslator.ToHtml(lbNum.BackColor),
-                 ColorTranslator.ToHtml(lbCaps.BackColor),
-                 ColorTranslator.ToHtml(lbScroll.BackColor),
+                 ColorTranslator.ToHtml(lbNumBackColor),
+                 ColorTranslator.ToHtml(lbCapsBackColor),
+                 ColorTranslator.ToHtml(lbScrollBackColor),
+                 ColorTranslator.ToHtml(label1.BackColor),
                  showNumToolStripMenuItem.Checked.ToString(),
                  showCapsToolStripMenuItem.Checked.ToString(),
                  showScrollToolStripMenuItem.Checked.ToString()

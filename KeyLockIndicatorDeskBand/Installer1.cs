@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Configuration.Install;
 using System.Diagnostics;
 using System.IO;
+using System.Windows.Forms;
 
 namespace KeyLockIndicatorDeskBand
 {
@@ -37,8 +38,8 @@ namespace KeyLockIndicatorDeskBand
             string filepath = DOUBLE_QUOTE + path + FILE_NAME + DOUBLE_QUOTE;
             string command = PROGRAM_NAME;
             string args = CODEBASE + filepath;
-            //MessageBox.Show(command);
-            //MessageBox.Show(args);
+            MessageBox.Show(command);
+            MessageBox.Show(args);
             ProcessStartInfo procinfo = new ProcessStartInfo();
             procinfo.FileName = CMD;
             procinfo.Arguments = PARAM_OUT + command + SPACE + args;
