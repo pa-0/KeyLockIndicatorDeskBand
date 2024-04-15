@@ -135,12 +135,15 @@ namespace KeyLockIndicatorDeskBand
             string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), Path.Combine(FOLDER_NAME, FILE_NAME));
             if (!File.Exists(path))
             {
-                string[] contents = new string[4]
+                string[] contents = new string[]
                 {
-                    ColorTranslator.ToHtml(lbNum.BackColor),
-                    ColorTranslator.ToHtml(lbCaps.BackColor),
-                    ColorTranslator.ToHtml(lbScroll.BackColor),
-                    ColorTranslator.ToHtml(label1.BackColor)
+                    ColorTranslator.ToHtml(lbNumBackColor = lbNum.BackColor),
+                    ColorTranslator.ToHtml(lbCapsBackColor = lbCaps.BackColor),
+                    ColorTranslator.ToHtml(lbScrollBackColor = lbScroll.BackColor),
+                    ColorTranslator.ToHtml(label1.BackColor),
+                    lbNum.Visible.ToString(),
+                    lbCaps.Visible.ToString(),
+                    lbScroll.Visible.ToString(),
                 };
                 Directory.CreateDirectory(Path.GetDirectoryName(path));
                 File.WriteAllLines(path, contents);
@@ -163,6 +166,7 @@ namespace KeyLockIndicatorDeskBand
             lbNum.Visible = IsKeyLocked(Keys.NumLock) && isNum;
             lbCaps.Visible = IsKeyLocked(Keys.CapsLock) && isCaps;
             lbScroll.Visible = IsKeyLocked(Keys.Scroll) && isScroll;
+            timer1.Start();
         }
 
 
@@ -197,6 +201,12 @@ namespace KeyLockIndicatorDeskBand
                 customColorDialog1.ColorChanged += (o, ev) =>
                 {
                     label1.BackColor = ev.CurrentColor;
+                    if (isScroll)
+                        lbScroll.BackColor = Control.IsKeyLocked(Keys.Scroll) ? lbScrollBackColor : label1.BackColor;
+                    if (isCaps)
+                        lbCaps.BackColor = Control.IsKeyLocked(Keys.CapsLock) ? lbCapsBackColor : label1.BackColor;
+                    if (isNum)
+                        lbNum.BackColor = Control.IsKeyLocked(Keys.NumLock) ? lbNumBackColor : label1.BackColor;
                 };
                 if (customColorDialog1.ShowDialog() == DialogResult.OK)
                 {
